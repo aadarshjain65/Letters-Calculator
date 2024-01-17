@@ -1,0 +1,128 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+}
+
+@media screen and (min-width: 768px) {
+  .app-container {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+.image {
+  width: 100%;
+  order: 1;
+}
+
+@media screen and (min-width: 992px) {
+  .image {
+    width: 50%;
+    order: 2;
+    margin-right: 40px;
+  }
+}
+
+.letters-calculator-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+@media screen and (min-width: 992px) {
+  .letters-calculator-container {
+    max-width: 1140px;
+    margin-left: 40px;
+  }
+}
+
+.heading {
+  font-family: 'Roboto';
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .heading {
+    font-size: 72px;
+    text-align: start;
+  }
+}
+
+.search-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+@media screen and (min-width: 992px) {
+  .search-input-container {
+    width: 90%;
+    max-width: 1140px;
+  }
+}
+
+.search-label {
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .search-label {
+    font-size: 24px;
+  }
+}
+
+.search-input {
+  border: solid 1px #e4e7eb;
+  border-radius: 4px;
+  outline: none;
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #ffffff;
+  padding: 10px;
+  background: transparent;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 992px) {
+  .search-input {
+    font-size: 28px;
+  }
+}
+
+.button {
+  height: 40px;
+  width: 130px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: bold;
+  color: #219a6f;
+  padding-top: 16px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 18px;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 992px) {
+  .button {
+    height: 80px;
+    width: 280px;
+    font-size: 32px;
+  }
+}
